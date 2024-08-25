@@ -2,3 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
+img {
+    max-height: 100%;
+}
+
+input, textarea, select {
+    @apply border border-gray-200 rounded-sm w-full py-2 px-3;
+    @apply mb-2;
+    @apply shadow-md;
+}
+
+input:focus, textarea:focus, select:focus {
+    @apply border-blue-900;
+}
+
+h1 {
+    @apply text-gray-800 font-medium mb-4 text-xl;
+}
+
+label {
+    @apply text-gray-600 mb-2 p-0.5;
+}
+
+.btn-save {
+    @apply bg-green-700 text-white font-medium px-4 rounded-sm py-1 shadow-sm;
+}
+
+.btn-delete {
+    @apply bg-red-800 text-white font-medium px-4 rounded-sm py-1 shadow-sm;
+}
+
+.btn-primary {
+    @apply bg-primary text-white px-4 py-1 rounded-sm shadow-sm;
+}
+
+table.basic {
+    @apply w-full bg-white rounded-sm shadow-md;
+}
+
+table.basic thead tr td,
+table.basic thead tr th
+{
+    @apply text-sm text-gray-600 border-b px-4 py-2 border-gray-200 uppercase;
+}
+
+table.basic tr td {
+    @apply px-4 py-1 ;
+}
+
+table.basic a {
+    @apply px-4 py-1 rounded-sm text-sm inline-flex mx-1 items-center gap-1 shadow-sm;
+    /* text-white bg-gray-600 */
+    /* bg-blue-800 text-white text-sm py-1 px-2 rounded-md gap-1 inline-flex mr-1.5 */
+}
+
+.btn-red, .btn-gray, .btn-default {
+    @apply px-4 py-1 rounded-sm shadow-sm;
+}
+
+.btn-red {
+    @apply bg-red-700 text-white rounded-sm shadow-sm;
+}
+
+.btn-gray {
+    @apply bg-gray-500 text-white rounded-sm px-4 py-1 shadow-sm;
+}
+
+.btn-default {
+    @apply bg-gray-300 text-white rounded-sm shadow-sm;
+}
